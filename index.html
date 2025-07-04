@@ -57,8 +57,8 @@
 
     <!-- HEADER  -->
     <header class="fixed top-0 left-0 md:static w-full z-40">
-        <div class="bg-key-gold-100 py-[11.5px] md:py-0 pl-3.5 pr-2 md:px-5 lg:px-10 flex items-center justify-between">
-            <div>
+        <div class="bg-key-gold-100 py-[11.5px] md:py-0 pl-3.5 pr-2 md:px-3 xl:px-10 flex items-center justify-between">
+            <div class="md:w-36 xl:w-60">
                 <a href="">
                     <img src="./assets/img/logo.svg" alt="ikemen Series" loading="lazy" width="86" height="40"
                         class="w-20 md:w-[86px]">
@@ -69,42 +69,82 @@
                 class="fixed z-10 left-0 bottom-0 md:static flex items-center justify-center  text-[10px] leading-[10px] tracking-[1px] md:text-[13px] font-[400] py-[6.5px] md:py-[19.5px] md:tracking-[1.3px] w-full md:max-w-[400px] lg:max-w-[560px] md:leading-[13px] bg-white md:bg-transparent">
                 <li class=" md:max-w-20 lg:max-w-[112px] w-full md:shrink-0 ">
                     <a href="#"
-                        class="flex flex-col items-center text-key-gold-500 transition hover:opacity-70 delay-[0.3s] ease-in gap-0.5 md:gap-1">
+                        class="flex flex-col items-center gap-0.5 md:gap-1 text-key-gold-500 hover:text-key-gold-500 group">
                         <img src="./assets/img/icon-home--gold.svg" alt="ホーム" loading="lazy" width="24"
                             height="24" class=""><span>ホーム</span>
                     </a>
                 </li>
                 <li class="md:max-w-20 lg:max-w-[112px] w-full md:shrink-0">
-                    <a href="#"
-                        class="flex flex-col items-center transition  hover:opacity-70 delay-[0.3s] ease-in gap-0.5 md:gap-1"><img
-                            src="./assets/img/icon-story.svg" alt="ストーリー" loading="lazy" width="24" height="24"
-                            class=""><span>ストーリー</span>
+                    <a href="#" class="flex flex-col items-center gap-0.5 md:gap-1 hover:text-key-gold-500 group">
+                        <img src="./assets/img/icon-story.svg" alt="ストーリー" loading="lazy" width="24" height="24"
+                            class="block group-hover:hidden">
+                        <img src="./assets/img/icon-story--gold.svg" alt="ストーリー" loading="lazy" width="24"
+                            height="24" class="hidden group-hover:block">
+                        <span>ストーリー</span>
                     </a>
                 </li>
-                <li class="md:max-w-20 lg:max-w-[112px] w-full md:shrink-0">
-                    <a href="#" class="flex flex-col items-center transition hover:opacity-70 delay-[0.3s] ease-in gap-0.5 md:gap-1">
-                        <img src="./assets/img/icon-crowdfunding.svg" alt="クラファン" loading="lazy" width="24"height="24" class=""><span>クラファン</span>
+                <li class="md:max-w-20 lg:max-w-[112px] w-full md:shrink-0 relative group/item ">
+                    <a href="#" class="flex flex-col items-center gap-0.5 md:gap-1 hover:text-key-gold-500 group">
+                        <img src="./assets/img/icon-crowdfunding.svg" alt="ストーリー" loading="lazy" width="24"
+                            height="24" class="block group-hover:hidden">
+                        <img src="./assets/img/icon-crowdfunding--gold.svg" alt="ストーリー" loading="lazy"
+                            width="24" height="24" class="hidden group-hover:block">
+                        <span>クラファン</span>
                     </a>
+
+                    <div class="pt-9 absolute top-10 invisible group-hover/item:visible max-w-[256px] w-full">
+                        <ul class="   p-4 bg-white w-max rounded-lg  ">
+                            <li class="py-3"><a href="#"
+                                    class="text-[13px] font-bold tracking-[1.3px] leading-5 flex items-center justify-between gap-2 hover:text-key-gold-500 group">
+                                    クラファンプロジェクト一覧
+                                    <img src="./assets/img/icon-chevron-right.svg" alt="" loading="lazy" width="24"
+                                        height="24" class="block group-hover:hidden">
+                                    <img src="./assets/img/icon-chevron-right-gold.svg" alt="" loading="lazy" width="24"
+                                        height="24" class="hidden group-hover:block">
+                                </a></li>
+                            <li class="py-3"><a href="#"
+                                    class="text-[13px] font-bold tracking-[1.3px] leading-5 flex items-center justify-between gap-2 hover:text-key-gold-500 group">応援コメント一覧
+                                    <img src="./assets/img/icon-chevron-right.svg" alt="" loading="lazy" width="24"
+                                        height="24" class="block group-hover:hidden">
+                                    <img src="./assets/img/icon-chevron-right-gold.svg" alt="" loading="lazy" width="24"
+                                        height="24" class="hidden group-hover:block"></a></li>
+                            <li class="py-3"><a href="#"
+                                    class="text-[13px] font-bold tracking-[1.3px] leading-5 flex items-center justify-between gap-2 hover:text-key-gold-500 group">応援コメント投稿
+                                    <img src="./assets/img/icon-chevron-right.svg" alt="" loading="lazy" width="24"
+                                        height="24" class="block group-hover:hidden">
+                                    <img src="./assets/img/icon-chevron-right-gold.svg" alt="" loading="lazy" width="24"
+                                        height="24" class="hidden group-hover:block"></a></li>
+                            <li class="py-3"><a href="#"
+                                    class="text-[13px] font-bold tracking-[1.3px] leading-5 flex items-center justify-between gap-2 hover:text-key-gold-500 group">終了したプロジェクト一覧
+                                    <img src="./assets/img/icon-chevron-right.svg" alt="" loading="lazy" width="24"
+                                        height="24" class="block group-hover:hidden">
+                                    <img src="./assets/img/icon-chevron-right-gold.svg" alt="" loading="lazy" width="24"
+                                        height="24" class="hidden group-hover:block"></a></li>
+                        </ul>
+                    </div>
+
                 </li>
                 <li class="md:max-w-20 lg:max-w-[112px] w-full md:shrink-0">
-                    <a href="#"
-                        class="flex flex-col items-center transition hover:opacity-70 delay-[0.3s] ease-in gap-0.5 md:gap-1"><img
-                            src="./assets/img/icon-column.svg" alt="コラム" loading="lazy" width="24" height="24"
-                            class=""><span>コラム</span>
+                    <a href="#" class="flex flex-col items-center gap-0.5 md:gap-1 hover:text-key-gold-500 group"> <img
+                            src="./assets/img/icon-column.svg" alt="ストーリー" loading="lazy" width="24" height="24"
+                            class="block group-hover:hidden">
+                        <img src="./assets/img/icon-column--gold.svg" alt="ストーリー" loading="lazy" width="24"
+                            height="24" class="hidden group-hover:block"><span>コラム</span>
                     </a>
                 </li>
                 <li class="hidden md:block max-w-20 lg:max-w-[112px]  w-full md:shrink-0  ">
-                    <a href="#"
-                        class="flex flex-col items-center hover:opacity-70 delay-[0.3s] ease-in transition gap-0.5 md:gap-1"><img
-                            src="./assets/img/icon-news.svg" alt="お知らせ" loading="lazy" width="24" height="24"
-                            class=""><span>お知らせ</span>
+                    <a href="#" class="flex flex-col items-center gap-0.5 md:gap-1 hover:text-key-gold-500 group"> <img
+                            src="./assets/img/icon-news.svg" alt="ストーリー" loading="lazy" width="24" height="24"
+                            class="block group-hover:hidden">
+                        <img src="./assets/img/icon-news--gold.svg" alt="ストーリー" loading="lazy" width="24"
+                            height="24" class="hidden group-hover:block"><span>お知らせ</span>
                     </a>
                 </li>
             </ul>
 
-            <div class="flex items-center md:gap-6">
+            <div class="flex items-center lg:gap-6 xl:w-60">
                 <a href="#"
-                    class="mx-[18px] md:mx-6 my-3 underline tracking-[1.3px] font-bold leading-3 md:leading-[13px] text-xs md:text-[13px] ">ログイン</a>
+                    class="mx-[18px] md:mx-2 xl:mx-6 my-3 underline tracking-[1.3px] font-bold leading-3 md:leading-[13px] text-xs md:text-[13px] ">ログイン</a>
                 <a href="#"
                     class="px-4 py-3 md:px-6 md:py-3 flex items-center justify-center rounded-btnRadius  shadow-b-shadow text-sm gap-1 tracking-[1.4px] leading-none bg-key-gold-500 text-white">会員登録</a>
                 <a href="#" class="ml-2 md:hidden ">
@@ -116,8 +156,7 @@
         <!-- SP-MENU -->
         <div
             class="hidden fixed md:hidden top-0 right-0 w-full max-h-screen h-screen overflow-y-scroll bg-key-gold-100  z-40">
-            <div
-                class="bg-key-gold-100 py-3 md:py-0 pl-3.5 pr-2 md:px-10 flex items-center justify-between">
+            <div class="bg-key-gold-100 py-3 md:py-0 pl-3.5 pr-2 md:px-10 flex items-center justify-between">
                 <div>
                     <a href="">
                         <img src="./assets/img/logo.svg" alt="ikemen Series" loading="lazy" width="86"
@@ -142,10 +181,10 @@
                                 height="24"></a></li>
                     <li class="py-4 pl-4 pr-2 border-b border-b-gray-500 md:border-b-0"><a href="#"
                             class="flex items-center justify-between   tracking-[1.6px]  font-medium"><span
-                                class="flex items-center gap-4"><img
-                                    src="./assets/img/icon-crowdfunding.svg" alt="crowdfunding" loading="lazy"
-                                    width="24" height="24">クラファン</span><img src="./assets/img/icon-minus.svg"
-                                alt="minus" loading="lazy" width="24" height="24"></a></li>
+                                class="flex items-center gap-4"><img src="./assets/img/icon-crowdfunding.svg"
+                                    alt="crowdfunding" loading="lazy" width="24" height="24">クラファン</span><img
+                                src="./assets/img/icon-minus.svg" alt="minus" loading="lazy" width="24"
+                                height="24"></a></li>
                     <ul>
                         <li class="py-4 pl-14 pr-2"><a href="#"
                                 class="flex items-center justify-between  text-xs tracking-[1.2px] leading-[18px] font-medium"><span
@@ -263,7 +302,7 @@
 
                 <!-- STORY -->
                 <div class="gap-6 grid grid-cols md:grid-cols-2 mt-6 md:mt-8">
-                  <div class=" rounded-xl shadow-b-shadow pb-3">
+                  <a href="#" class=" rounded-xl shadow-b-shadow pb-3 md:hover:opacity-70 md:hover:translate-y-[-4px] md:transition md:duration-[0.3s] ease-in md:cursor-pointer ">
                     <img src="assets/img/story/img01.webp" alt="イケメン夜曲" loading="lazy" width="392" height="207"
                       class="w-full">
                     <div class="my-3 pl-3 ml-3 border-l-2 border-key-gold-500">
@@ -272,14 +311,14 @@
                       </p>
                     </div>
                     <div class="flex justify-end mr-3">
-                      <a href="#"
+                      <div 
                         class="px-4 py-3 md:px-6 md:py-3 flex items-center justify-center rounded-btnRadius  shadow-b-shadow text-sm gap-1 tracking-[1.4px] leading-none bg-sub-black text-white">ストーリーへ
                         <img src="assets/img/icon-arrow-right_white.svg" alt="ストーリーへ" loading="lazy" width="24"
                           height="24">
-                      </a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="rounded-xl shadow-b-shadow pb-3">
+                  </a>
+                  <a fhref="#" class="rounded-xl shadow-b-shadow pb-3 md:hover:opacity-70 md:hover:translate-y-[-4px] md:transition md:duration-[0.3s] ease-in md:cursor-pointer">
                     <img src="assets/img/story/img02.webp" alt="スイートルームの眠り姫" loading="lazy" width="392" height="207"
                       class="w-full">
                     <div class="my-3 pl-3 ml-3 border-l-2 border-key-gold-500">
@@ -287,14 +326,14 @@
                       <p class="   tracking-[1.6px]  line-clamp-1">セレブ的贅沢恋愛</p>
                     </div>
                     <div class="flex justify-end mr-3">
-                      <a href="#"
+                      <div
                         class="px-4 py-3 md:px-6 md:py-3 flex items-center justify-center rounded-btnRadius  shadow-b-shadow text-sm gap-1 tracking-[1.4px] leading-none bg-sub-black text-white">ストーリーへ
                         <img src="assets/img/icon-arrow-right_white.svg" alt="ストーリーへ" loading="lazy" width="24"
                           height="24">
-                      </a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="rounded-xl shadow-b-shadow pb-3">
+                  </a>
+                  <a href="#" class="rounded-xl shadow-b-shadow pb-3 md:hover:opacity-70 md:hover:translate-y-[-4px] md:transition md:duration-[0.3s] ease-in md:cursor-pointer">
                     <img src="assets/img/story/img03.webp" alt="イケメンライブ" loading="lazy" width="392" height="207"
                       class="w-full">
                     <div class="my-3 pl-3 ml-3 border-l-2 border-key-gold-500">
@@ -302,14 +341,14 @@
                       <p class="   tracking-[1.6px]  line-clamp-1">恋の歌をキミに</p>
                     </div>
                     <div class="flex justify-end mr-3">
-                      <a href="#"
+                      <div href="#"
                         class="px-4 py-3 md:px-6 md:py-3 flex items-center justify-center rounded-btnRadius  shadow-b-shadow text-sm gap-1 tracking-[1.4px] leading-none bg-sub-black text-white">ストーリーへ
                         <img src="assets/img/icon-arrow-right_white.svg" alt="ストーリーへ" loading="lazy" width="24"
                           height="24">
-                      </a>
+                      </div>
                     </div>
-                  </div>
-                  <div class="rounded-xl shadow-b-shadow pb-3">
+                  </a>
+                  <a href="#" class="rounded-xl shadow-b-shadow pb-3 md:hover:opacity-70 md:hover:translate-y-[-4px] md:transition md:duration-[0.3s] ease-in md:cursor-pointer">
                     <img src="assets/img/story/img04.webp" alt="タイトル" loading="lazy" width="392" height="207"
                       class="w-full">
                     <div class="my-3 pl-3 ml-3 border-l-2 border-key-gold-500">
@@ -317,13 +356,13 @@
                       <p class="   tracking-[1.6px]  line-clamp-1">サブタイトル</p>
                     </div>
                     <div class="flex justify-end mr-3">
-                      <a href="#"
+                      <div href="#"
                         class="px-4 py-3 md:px-6 md:py-3 flex items-center justify-center rounded-btnRadius  shadow-b-shadow text-sm gap-1 tracking-[1.4px] leading-none bg-sub-black text-white">ストーリーへ
                         <img src="assets/img/icon-arrow-right_white.svg" alt="ストーリーへ" loading="lazy" width="24"
                           height="24">
-                      </a>
+                      </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
                 <div class="flex items-center justify-center mt-8 md:mt-12">
                   <a href="#"
@@ -356,7 +395,7 @@
                   </div>
 
                   <div class="pt-8 pb-8 border-t-2 border-t-gray-400 ">
-                    <h3 class="text-key-gold-500 text-2xl leading-6 font-bold">Story Category</h3>
+                    <h3 class="text-key-gold-500 text-2xl leading-6 font-bold">Story Review</h3>
                     <p
                       class=" text-lg md:text-[15px] tracking-[1.8px] md:tracking-[1.5px] leading-[27px] md:leading-[22.5px] pt-2 font-bold">
                       ストーリーレビュー
@@ -390,7 +429,7 @@
                           <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                           <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                           <img src="assets/img/star.svg" alt="star" loading="lazy" width="14" height="14">
-                          <span class="text-key-gold-500 text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
+                          <span class="text-sub-black text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
                         </div>
                         <p class="   leading-6 tracking-[1.6px] line-clamp-3">
                           眠り姫のなにがいいって、現代チックな恋ができることだと思う。レビューテ眠り姫のなにがいいって、現代チックな恋ができることだと思う。レビューテ</p>
@@ -425,7 +464,7 @@
                           <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                           <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                           <img src="assets/img/star.svg" alt="star" loading="lazy" width="14" height="14">
-                          <span class="text-key-gold-500 text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
+                          <span class="text-sub-black text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
                         </div>
                         <p class="   leading-6 tracking-[1.6px] line-clamp-3">
                           眠り姫のなにがいいって、現代チックな恋ができることだと思う。レビューテ眠り姫のなにがいいって、現代チックな恋ができることだと思う。レビューテ</p>
@@ -460,7 +499,7 @@
                           <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                           <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                           <img src="assets/img/star.svg" alt="star" loading="lazy" width="14" height="14">
-                          <span class="text-key-gold-500 text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
+                          <span class="text-sub-black text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
                         </div>
                         <p class="   leading-6 tracking-[1.6px] line-clamp-3">
                           眠り姫のなにがいいって、現代チックな恋ができることだと思う。レビューテ眠り姫のなにがいいって、現代チックな恋ができることだと思う。レビューテ</p>
@@ -470,8 +509,8 @@
                           <img src="assets/img/icon-chevron-down.svg" alt="続きを読む" loading="lazy" width="24" height="24">
                         </p>
                         <div class="flex justify-end items-center gap-4 border-t border-t-gray-100 pt-[7px]">
-                          <span class="flex gap-1 items-center"><img src="assets/img/icon-comment.svg"
-                              loading="lazy" width="24" height="24" alt="">23</span>
+                          <span class="flex gap-1 items-center"><img src="assets/img/icon-comment.svg" loading="lazy"
+                              width="24" height="24" alt="">23</span>
                           <span class="flex gap-1 items-center"><img src="assets/img/icon-heart.svg" alt=""
                               loading="lazy" width="24" height="24">8</span>
                           <span class="flex gap-1 items-center"><img src="assets/img/icon-loudspeaker.svg" alt=""
@@ -526,14 +565,14 @@
 
                 <!-- Crowdfunding -->
                 <div class="gap-6 grid grid-cols md:grid-cols-2 mt-8">
-                  <div class=" rounded-xl shadow-b-shadow">
+                  <a href="#" class=" rounded-xl shadow-b-shadow md:hover:opacity-70 md:hover:translate-y-[-4px] md:transition md:duration-[0.3s] ease-in md:cursor-pointer">
                     <img src="assets/img/story/img05.webp" alt="イケメン夜曲" loading="lazy" width="392" height="207"
                       class="w-full">
                     <div class="my-2 px-3">
                       <p class="  font-bold tracking-[1.6px] line-clamp-2">
                         サービス終了後でも続きが見たい！「イケメン夜曲」復活プロジェクトにあなたも一緒に参加しサービス終了後でも続きが見たい！「イケメン夜曲」復活プロジェクトにあなたも一緒に参加し</p>
-                      <p class=" font-bold   flex items-center py-2">
-                        <span class="text-gray-800 text-xs tracking-[1.2px] pr-2  ">現在</span>850,000<span
+                      <p class=" font-bold flex items-center py-2">
+                        <span class="text-gray-800 text-xs tracking-[1.2px] font-normal pr-2">現在</span>850,000<span
                           class="text-xs tracking-[1.2px] pl-0.5  ">円</span>
                       </p>
                       <div
@@ -544,25 +583,25 @@
                       <div class="flex justify-between pt-2">
                         <div class="flex items-center">
                           <img src="assets/img/icon-clock--gray.svg" alt="残り" loading="lazy" width="24" height="24">
-                          <span class="text-xs tracking-[1.2px]  text-gray-500 leading-[18px] pl-1">残り</span>
+                          <span class="text-xs tracking-[1.2px]  text-gray-800 leading-[18px] pl-1">残り</span>
                           <span class=" font-bold text-sm  leading-[21px] pl-0.5">29</span>
                           <span class=" text-xs  leading-[18px]">日</span>
                         </div>
                         <div class="flex items-center">
                           <img src="assets/img/icon-heart.svg" alt="気になる" loading="lazy" width="24" height="24">
-                          <span class="text-xs tracking-[1.2px]  text-gray-500 leading-[18px] pl-1">気になる</span>
+                          <span class="text-xs tracking-[1.2px] text-gray-800 leading-[18px] pl-1">気になる</span>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="rounded-xl shadow-b-shadow">
+                  </a>
+                  <a href="#" class="rounded-xl shadow-b-shadow md:hover:opacity-70 md:hover:translate-y-[-4px] md:transition md:duration-[0.3s] ease-in md:cursor-pointer">
                     <img src="assets/img/story/img06.webp" alt="イケメン夜曲" loading="lazy" width="392" height="207"
                       class="w-full">
                     <div class="my-2 px-3">
                       <p class="  font-bold tracking-[1.6px] line-clamp-2">
                         サービス終了後でも続きが見たい！「イケメ「イケメン夜曲」復活プロジェクトにあなたも一緒に参加しサービス終了後でも続きが見たい！「イケメン夜曲」復活プロジェクトにあなたも一緒に参加し</p>
                       <p class=" font-bold   flex items-center py-2">
-                        <span class="text-gray-800 text-xs tracking-[1.2px] pr-2  ">現在</span>1,000,000<span
+                        <span class="text-gray-800 text-xs tracking-[1.2px] pr-2 font-normal ">現在</span>1,000,000<span
                           class="text-xs tracking-[1.2px] pl-0.5  ">円</span>
                       </p>
                       <div
@@ -573,25 +612,25 @@
                       <div class="flex justify-between pt-2">
                         <div class="flex items-center">
                           <img src="assets/img/icon-clock--gray.svg" alt="残り" loading="lazy" width="24" height="24">
-                          <span class="text-xs tracking-[1.2px]  text-gray-500 leading-[18px] pl-1">残り</span>
+                          <span class="text-xs tracking-[1.2px]  text-gray-800 leading-[18px] pl-1">残り</span>
                           <span class=" font-bold text-sm  leading-[21px] pl-0.5">29</span>
                           <span class=" text-xs  leading-[18px]">日</span>
                         </div>
                         <div class="flex items-center">
                           <img src="assets/img/icon-heart.svg" alt="気になる" loading="lazy" width="24" height="24">
-                          <span class="text-xs tracking-[1.2px]  text-gray-500 leading-[18px] pl-1">気になる</span>
+                          <span class="text-xs tracking-[1.2px]  text-gray-800 leading-[18px] pl-1">気になる</span>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="rounded-xl shadow-b-shadow">
+                  </a>
+                  <a href="#" class="rounded-xl shadow-b-shadow md:hover:opacity-70 md:hover:translate-y-[-4px] md:transition md:duration-[0.3s] ease-in md:cursor-pointer">
                     <img src="assets/img/story/img07.webp" alt="イケメン夜曲" loading="lazy" width="392" height="207"
                       class="w-full">
                     <div class="my-2 px-3">
                       <p class="  font-bold tracking-[1.6px] line-clamp-2">
                         サービス終了後でも続きが見たい！「イケメ「イケメン夜曲」復活プロジェクトにあなたも一緒に参加しサービス終了後でも続きが見たい！「イケメン夜曲」復活プロジェクトにあなたも一緒に参加し</p>
                       <p class=" font-bold   flex items-center py-2">
-                        <span class="text-gray-800 text-xs tracking-[1.2px] pr-2  ">現在</span>1,000,000<span
+                        <span class="text-gray-800 text-xs tracking-[1.2px] pr-2 font-normal ">現在</span>1,000,000<span
                           class="text-xs tracking-[1.2px] pl-0.5  ">円</span>
                       </p>
                       <div
@@ -602,25 +641,25 @@
                       <div class="flex justify-between pt-2">
                         <div class="flex items-center">
                           <img src="assets/img/icon-clock--gray.svg" alt="残り" loading="lazy" width="24" height="24">
-                          <span class="text-xs tracking-[1.2px]  text-gray-500 leading-[18px] pl-1">残り</span>
+                          <span class="text-xs tracking-[1.2px]  text-gray-800 leading-[18px] pl-1">残り</span>
                           <span class=" font-bold text-sm  leading-[21px] pl-0.5">29</span>
                           <span class=" text-xs  leading-[18px]">日</span>
                         </div>
                         <div class="flex items-center">
                           <img src="assets/img/icon-heart.svg" alt="気になる" loading="lazy" width="24" height="24">
-                          <span class="text-xs tracking-[1.2px]  text-gray-500 leading-[18px] pl-1">気になる</span>
+                          <span class="text-xs tracking-[1.2px]  text-gray-800 leading-[18px] pl-1">気になる</span>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="rounded-xl shadow-b-shadow">
+                  </a>
+                  <a href="#" class="rounded-xl shadow-b-shadow md:hover:opacity-70 md:hover:translate-y-[-4px] md:transition md:duration-[0.3s] ease-in md:cursor-pointer">
                     <img src="assets/img/story/img05.webp" alt="イケメン夜曲" loading="lazy" width="392" height="207"
                       class="w-full">
                     <div class="my-2 px-3">
                       <p class="  font-bold tracking-[1.6px] line-clamp-2">
                         サービス終了後でも続きが見たい！「イケメ「イケメン夜曲」復活プロジェクトにあなたも一緒に参加しサービス終了後でも続きが見たい！「イケメン夜曲」復活プロジェクトにあなたも一緒に参加し</p>
                       <p class=" font-bold   flex items-center py-2">
-                        <span class="text-gray-800 text-xs tracking-[1.2px] pr-2  ">現在</span>850,000<span
+                        <span class="text-gray-800 text-xs tracking-[1.2px] pr-2 font-normal ">現在</span>850,000<span
                           class="text-xs tracking-[1.2px] pl-0.5  ">円</span>
                       </p>
                       <div
@@ -631,17 +670,17 @@
                       <div class="flex justify-between pt-2">
                         <div class="flex items-center">
                           <img src="assets/img/icon-clock--gray.svg" alt="残り" loading="lazy" width="24" height="24">
-                          <span class="text-xs tracking-[1.2px]  text-gray-500 leading-[18px] pl-1">残り</span>
+                          <span class="text-xs tracking-[1.2px]  text-gray-800 leading-[18px] pl-1">残り</span>
                           <span class=" font-bold text-sm  leading-[21px] pl-0.5">29</span>
                           <span class=" text-xs  leading-[18px]">日</span>
                         </div>
                         <div class="flex items-center">
                           <img src="assets/img/icon-heart.svg" alt="気になる" loading="lazy" width="24" height="24">
-                          <span class="text-xs tracking-[1.2px]  text-gray-500 leading-[18px] pl-1">気になる</span>
+                          <span class="text-xs tracking-[1.2px]  text-gray-800 leading-[18px] pl-1">気になる</span>
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 </div>
 
                 <div class="flex items-center justify-center mt-8 md:mt-12">
@@ -691,7 +730,7 @@
                         <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                         <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                         <img src="assets/img/star.svg" alt="star" loading="lazy" width="14" height="14">
-                        <span class="text-key-gold-500 text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
+                        <span class="text-sub-black text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
                       </div>
                       <p class="   leading-6 tracking-[1.6px] line-clamp-3">
                         ここに応援コメントが入ります。ここに応援コメントが入ります。ここに応援コメントが入ります。ここ...</p>
@@ -703,10 +742,10 @@
                       <div class="flex justify-end items-center gap-4 border-t border-t-gray-100 pt-[7px]">
                         <span class="flex gap-1 items-center"><img src="assets/img/icon-comment.svg" alt=""
                             loading="lazy" width="24" height="24">23</span>
-                        <span class="flex gap-1 items-center"><img src="assets/img/icon-heart.svg" alt=""
-                            loading="lazy" width="24" height="24">8</span>
-                        <span class="flex gap-1 items-center"><img src="assets/img/icon-loudspeaker.svg"
-                            loading="lazy" width="24" height="24" alt=""></span>
+                        <span class="flex gap-1 items-center"><img src="assets/img/icon-heart.svg" alt="" loading="lazy"
+                            width="24" height="24">8</span>
+                        <span class="flex gap-1 items-center"><img src="assets/img/icon-loudspeaker.svg" loading="lazy"
+                            width="24" height="24" alt=""></span>
                       </div>
 
                     </div>
@@ -738,10 +777,10 @@
                       <div class="flex justify-end items-center gap-4 border-t border-t-gray-100 pt-[7px]">
                         <span class="flex gap-1 items-center"><img src="assets/img/icon-comment.svg" loading="lazy"
                             width="24" height="24" alt="">23</span>
-                        <span class="flex gap-1 items-center"><img src="assets/img/icon-heart.svg" alt=""
-                            loading="lazy" width="24" height="24">8</span>
-                        <span class="flex gap-1 items-center"><img src="assets/img/icon-loudspeaker.svg"
-                            loading="lazy" width="24" height="24" alt=""></span>
+                        <span class="flex gap-1 items-center"><img src="assets/img/icon-heart.svg" alt="" loading="lazy"
+                            width="24" height="24">8</span>
+                        <span class="flex gap-1 items-center"><img src="assets/img/icon-loudspeaker.svg" loading="lazy"
+                            width="24" height="24" alt=""></span>
                       </div>
 
                     </div>
@@ -761,7 +800,7 @@
                         <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                         <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                         <img src="assets/img/star.svg" alt="star" loading="lazy" width="14" height="14">
-                        <span class="text-key-gold-500 text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
+                        <span class="text-sub-black text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
                       </div>
                       <p class="   leading-6 tracking-[1.6px] line-clamp-3">
                         ここに応援コメントが入ります。ここに応援コメントが入ります。ここに応援コメントが入ります。ここ...</p>
@@ -773,10 +812,10 @@
                       <div class="flex justify-end items-center gap-4 border-t border-t-gray-100 pt-[7px]">
                         <span class="flex gap-1 items-center"><img src="assets/img/icon-comment.svg" loading="lazy"
                             width="24" height="24" alt="">23</span>
-                        <span class="flex gap-1 items-center"><img src="assets/img/icon-heart.svg" alt=""
-                            loading="lazy" width="24" height="24">8</span>
-                        <span class="flex gap-1 items-center"><img src="assets/img/icon-loudspeaker.svg"
-                            loading="lazy" width="24" height="24" alt=""></span>
+                        <span class="flex gap-1 items-center"><img src="assets/img/icon-heart.svg" alt="" loading="lazy"
+                            width="24" height="24">8</span>
+                        <span class="flex gap-1 items-center"><img src="assets/img/icon-loudspeaker.svg" loading="lazy"
+                            width="24" height="24" alt=""></span>
                       </div>
 
                     </div>
@@ -826,7 +865,7 @@
                 <div class="overflow-hidden py-8 max-w-[868px] px-4 mx-[-16px]">
                   <div class="flex gap-6">
                     <!-- BOXCARD -->
-                    <div class="p-[12px] shadow-b-shadow rounded-xl w-[220px] shrink-0 bg-white">
+                    <a href="#" class="p-[12px] shadow-b-shadow rounded-xl w-[220px] shrink-0 bg-white md:hover:opacity-70 md:hover:translate-y-[-4px] md:transition md:duration-[0.3s] ease-in md:cursor-pointer">
                       <div class="rounded-xl">
                         <img src="./assets/img/column/column01.webp" alt="スイートルームの眠り姫のここでしか聞けない..." loading="lazy"
                           width="196" height="110" class="w-full">
@@ -874,11 +913,11 @@
                         </div>
                         <!-- TAGS -->
                       </div>
-                    </div>
+                    </a>
                     <!-- BOXCARD -->
 
                     <!-- BOXCARD -->
-                    <div class="p-[12px] shadow-b-shadow rounded-xl w-[220px] shrink-0 bg-white">
+                    <a href="#" class="p-[12px] shadow-b-shadow rounded-xl w-[220px] shrink-0 bg-white md:hover:opacity-70 md:hover:translate-y-[-4px] md:transition md:duration-[0.3s] ease-in md:cursor-pointer">
                       <div class="rounded-xl">
                         <img src="./assets/img/column/column01.webp" alt="スイートルームの眠り姫のここでしか聞けない..." loading="lazy"
                           width="196" height="110" class="w-full">
@@ -925,11 +964,11 @@
                         </div>
                         <!-- TAGS -->
                       </div>
-                    </div>
+                    </a>
                     <!-- BOXCARD -->
 
                     <!-- BOXCARD -->
-                    <div class="p-[12px] shadow-b-shadow rounded-xl w-[220px] shrink-0 bg-white">
+                    <a href="#" class="p-[12px] shadow-b-shadow rounded-xl w-[220px] shrink-0 bg-white md:hover:opacity-70 md:hover:translate-y-[-4px] md:transition md:duration-[0.3s] ease-in md:cursor-pointer">
                       <div class="rounded-xl">
                         <img src="./assets/img/column/column01.webp" alt="スイートルームの眠り姫のここでしか聞けない..." loading="lazy"
                           width="196" height="110" class="w-full">
@@ -977,11 +1016,11 @@
                         </div>
                         <!-- TAGS -->
                       </div>
-                    </div>
+                    </a>
                     <!-- BOXCARD -->
 
                     <!-- BOXCARD -->
-                    <div class="p-[12px] shadow-b-shadow rounded-xl w-[220px] shrink-0 bg-white">
+                    <a href="#" class="p-[12px] shadow-b-shadow rounded-xl w-[220px] shrink-0 bg-white md:hover:opacity-70 md:hover:translate-y-[-4px] md:transition md:duration-[0.3s] ease-in md:cursor-pointer">
                       <div class="rounded-xl">
                         <img src="./assets/img/column/column01.webp" alt="スイートルームの眠り姫のここでしか聞けない..." loading="lazy"
                           width="196" height="110" class="w-full">
@@ -1029,15 +1068,14 @@
                         </div>
                         <!-- TAGS -->
                       </div>
-                    </div>
+                    </a>
                     <!-- BOXCARD -->
 
                   </div>
                 </div>
 
                 <div class="max-w-[720px] bg-gray-200 h-0.5 mx-auto rounded-[4px] relative mr-[69px] md:mr-11">
-                  <span
-                    class="w-full max-w-[90px] md:max-w-60 absolute left-0 top-0 h-full bg-key-gold-500"></span>
+                  <span class="w-full max-w-[90px] md:max-w-60 absolute left-0 top-0 h-full bg-key-gold-500"></span>
                 </div>
 
                 <div class="flex items-center justify-center mt-12">
@@ -1074,7 +1112,7 @@
             </div>
 
             <div class="pt-8 pb-[47px] border-t-2 border-t-gray-400 ">
-              <h3 class="text-key-gold-500 text-2xl leading-6 font-bold">Story Category</h3>
+              <h3 class="text-key-gold-500 text-2xl leading-6 font-bold">Story Review</h3>
               <p class=" text-[15px] tracking-[1.5px] leading-[22.5px] pt-2 font-bold">カテゴリーからストーリーを探す
               </p>
 
@@ -1106,7 +1144,7 @@
                     <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                     <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                     <img src="assets/img/star.svg" alt="star" loading="lazy" width="14" height="14">
-                    <span class="text-key-gold-500 text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
+                    <span class="text-sub-black text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
                   </div>
                   <p class="   leading-6 tracking-[1.6px] line-clamp-3">
                     眠り姫のなにがいいって、現代チックな恋ができることだと思う。レビューテ眠り姫のなにがいいって、現代チックな恋ができることだと思う。レビューテ</p>
@@ -1119,8 +1157,8 @@
                         loading="lazy" width="24" height="24">23</span>
                     <span class="flex gap-1 text-sm items-center"><img src="assets/img/icon-heart.svg" alt=""
                         loading="lazy" width="24" height="24">8</span>
-                    <span class="flex gap-1 text-sm items-center"><img src="assets/img/icon-loudspeaker.svg"
-                        alt="" loading="lazy" width="24" height="24"></span>
+                    <span class="flex gap-1 text-sm items-center"><img src="assets/img/icon-loudspeaker.svg" alt=""
+                        loading="lazy" width="24" height="24"></span>
                   </div>
 
                 </div>
@@ -1140,7 +1178,7 @@
                     <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                     <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                     <img src="assets/img/star.svg" alt="star" loading="lazy" width="14" height="14">
-                    <span class="text-key-gold-500 text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
+                    <span class="text-sub-black text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
                   </div>
                   <p class="   leading-6 tracking-[1.6px] line-clamp-3">
                     眠り姫のなにがいいって、現代チックな恋ができることだと思う。レビューテ眠り姫のなにがいいって、現代チックな恋ができることだと思う。レビューテ</p>
@@ -1153,8 +1191,8 @@
                         loading="lazy" width="24" height="24">23</span>
                     <span class="flex gap-1 text-sm items-center"><img src="assets/img/icon-heart.svg" alt=""
                         loading="lazy" width="24" height="24">8</span>
-                    <span class="flex gap-1 text-sm items-center"><img src="assets/img/icon-loudspeaker.svg"
-                        alt="" loading="lazy" width="24" height="24"></span>
+                    <span class="flex gap-1 text-sm items-center"><img src="assets/img/icon-loudspeaker.svg" alt=""
+                        loading="lazy" width="24" height="24"></span>
                   </div>
 
                 </div>
@@ -1174,7 +1212,7 @@
                     <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                     <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                     <img src="assets/img/star.svg" alt="star" loading="lazy" width="14" height="14">
-                    <span class="text-key-gold-500 text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
+                    <span class="text-sub-black text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
                   </div>
                   <p class="   leading-6 tracking-[1.6px] line-clamp-3">
                     眠り姫のなにがいいって、現代チックな恋ができることだと思う。レビューテ眠り姫のなにがいいって、現代チックな恋ができることだと思う。レビューテ</p>
@@ -1187,8 +1225,8 @@
                         loading="lazy" width="24" height="24">23</span>
                     <span class="flex gap-1 items-center text-sm"><img src="assets/img/icon-heart.svg" alt=""
                         loading="lazy" width="24" height="24">8</span>
-                    <span class="flex gap-1 items-center text-sm"><img src="assets/img/icon-loudspeaker.svg"
-                        alt="" loading="lazy" width="24" height="24"></span>
+                    <span class="flex gap-1 items-center text-sm"><img src="assets/img/icon-loudspeaker.svg" alt=""
+                        loading="lazy" width="24" height="24"></span>
                   </div>
 
                 </div>
@@ -1237,7 +1275,7 @@
                     <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                     <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                     <img src="assets/img/star.svg" alt="star" loading="lazy" width="14" height="14">
-                    <span class="text-key-gold-500 text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
+                    <span class="text-sub-black text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
                   </div>
                   <p class="   leading-6 tracking-[1.6px] line-clamp-3">
                     ここに応援コメントが入ります。ここに応援コメントが入ります。ここに応援コメントが入ります。ここ...</p>
@@ -1250,8 +1288,8 @@
                         loading="lazy" width="24" height="24">23</span>
                     <span class="flex gap-1 items-center text-sm"><img src="assets/img/icon-heart.svg" alt=""
                         loading="lazy" width="24" height="24">8</span>
-                    <span class="flex gap-1 items-center text-sm"><img src="assets/img/icon-loudspeaker.svg"
-                        alt="" loading="lazy" width="24" height="24"></span>
+                    <span class="flex gap-1 items-center text-sm"><img src="assets/img/icon-loudspeaker.svg" alt=""
+                        loading="lazy" width="24" height="24"></span>
                   </div>
 
                 </div>
@@ -1271,7 +1309,7 @@
                     <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                     <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                     <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
-                    <span class="text-key-gold-500 text-sm  tracking-[0.5px] leading-[21px] pl-1">5.0</span>
+                    <span class="text-sub-black text-sm  tracking-[0.5px] leading-[21px] pl-1">5.0</span>
                   </div>
                   <p class="   leading-6 tracking-[1.6px] line-clamp-3">
                     レビューテキストが入ります。レビューテキストが入ります。</p>
@@ -1282,8 +1320,7 @@
                   <div class="flex justify-end items-center gap-4 border-t border-t-gray-100 pt-[7px]">
                     <span class="flex gap-1 items-center text-sm"><img src="assets/img/icon-comment.svg"
                         alt="">23</span>
-                    <span class="flex gap-1 items-center text-sm"><img src="assets/img/icon-heart.svg"
-                        alt="">8</span>
+                    <span class="flex gap-1 items-center text-sm"><img src="assets/img/icon-heart.svg" alt="">8</span>
                     <span class="flex gap-1 items-center text-sm"><img src="assets/img/icon-loudspeaker.svg"
                         alt=""></span>
                   </div>
@@ -1305,7 +1342,7 @@
                     <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                     <img src="assets/img/star-gold.svg" alt="star" loading="lazy" width="14" height="14">
                     <img src="assets/img/star.svg" alt="star" loading="lazy" width="14" height="14">
-                    <span class="text-key-gold-500 text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
+                    <span class="text-sub-black text-sm  tracking-[0.5px] leading-[21px] pl-1">4.0</span>
                   </div>
                   <p class="   leading-6 tracking-[1.6px] line-clamp-3">
                     ここに応援コメントが入ります。ここに応援コメントが入ります。ここに応援コメントが入ります。ここ...</p>
@@ -1318,8 +1355,8 @@
                         loading="lazy" width="24" height="24">23</span>
                     <span class="flex gap-1 items-center text-sm"><img src="assets/img/icon-heart.svg" alt=""
                         loading="lazy" width="24" height="24">8</span>
-                    <span class="flex gap-1 items-center text-sm"><img src="assets/img/icon-loudspeaker.svg"
-                        alt="" loading="lazy" width="24" height="24"></span>
+                    <span class="flex gap-1 items-center text-sm"><img src="assets/img/icon-loudspeaker.svg" alt=""
+                        loading="lazy" width="24" height="24"></span>
                   </div>
 
                 </div>
@@ -1471,7 +1508,7 @@
           <!-- FAQ ROW -->
           <div>
             <!-- Q BLOCK -->
-            <div class="flex items-center pl-3 pt-2 pb-[7px] cursor-pointer">
+            <div class="flex items-center pl-3 py-3 cursor-pointer">
               <p class=" text-xl tracking-[2px] leading-5 font-bold">Q</p>
               <p class="leading-6  tracking-[1.6px] font-bold pl-4 w-full pr-8 relative">
                 質問テキスト
@@ -1482,10 +1519,9 @@
             <!-- Q BLOCK -->
 
             <!-- A BLOCK -->
-            <div class="hidden items-start pl-3 py-2 pr-[35px] md:pr-8 bg-gray-50">
+            <div class="hidden items-start pl-3 py-3 pr-[35px] md:pr-8 bg-gray-50">
               <p class=" tracking-[2px] leading-5 text-gray-600 text-xl font-bold">A</p>
-              <p
-                class="pl-4 text-sm md:  leading-[21px] md:leading-6 tracking-[1.4px] md:tracking-[1.6px] ">
+              <p class="pl-4 text-sm md:  leading-[21px] md:leading-6 tracking-[1.4px] md:tracking-[1.6px] ">
                 回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。
               </p>
             </div>
@@ -1495,7 +1531,7 @@
           <!-- FAQ ROW -->
           <div>
             <!-- Q BLOCK -->
-            <div class="flex items-center pl-3 pt-2 pb-[7px] cursor-pointer">
+            <div class="flex items-center pl-3 py-3 cursor-pointer">
               <p class=" text-xl tracking-[2px] leading-5 font-bold">Q</p>
               <p class="leading-6  tracking-[1.6px] font-bold pl-4 w-full pr-8 relative">
                 質問テキスト
@@ -1506,10 +1542,9 @@
             <!-- Q BLOCK -->
 
             <!-- A BLOCK -->
-            <div class="flex items-start pl-3 py-2 pr-[35px] md:pr-8 bg-gray-50">
+            <div class="flex items-start pl-3 py-3 pr-[35px] md:pr-8 bg-gray-50">
               <p class=" tracking-[2px] leading-5 text-gray-600 text-xl font-bold">A</p>
-              <p
-                class="pl-4 text-sm md:  leading-[21px] md:leading-6 tracking-[1.4px] md:tracking-[1.6px] ">
+              <p class="pl-4 text-sm md:  leading-[21px] md:leading-6 tracking-[1.4px] md:tracking-[1.6px] ">
                 回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。
               </p>
             </div>
@@ -1519,7 +1554,7 @@
           <!-- FAQ ROW -->
           <div>
             <!-- Q BLOCK -->
-            <div class="flex items-center pl-3 pt-2 pb-[7px] cursor-pointer">
+            <div class="flex items-center pl-3 py-3 cursor-pointer">
               <p class=" text-xl tracking-[2px] leading-5 font-bold">Q</p>
               <p class="leading-6  tracking-[1.6px] font-bold pl-4 w-full pr-8 relative">
                 質問テキスト
@@ -1530,10 +1565,9 @@
             <!-- Q BLOCK -->
 
             <!-- A BLOCK -->
-            <div class="hidden items-start pl-3 py-2 pr-[35px] md:pr-8 bg-gray-50">
+            <div class="hidden items-start pl-3 py-3 pr-[35px] md:pr-8 bg-gray-50">
               <p class=" tracking-[2px] leading-5 text-gray-600 text-xl font-bold">A</p>
-              <p
-                class="pl-4 text-sm md:  leading-[21px] md:leading-6 tracking-[1.4px] md:tracking-[1.6px] ">
+              <p class="pl-4 text-sm md:  leading-[21px] md:leading-6 tracking-[1.4px] md:tracking-[1.6px] ">
                 回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。回答テキストが入ります。
               </p>
             </div>
@@ -1646,7 +1680,7 @@
         </li>
       </ul>
     </div>
-    <p class="text-center text-gray-600 text-xs leading-[18px] font-medium mt-8 md:mt-0">©CYBIRD</p>
+    <p class="text-center text-gray-900 text-xs leading-[18px] font-medium mt-8 md:mt-0">©CYBIRD</p>
   </div>
 </footer>
 
