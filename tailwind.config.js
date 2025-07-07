@@ -58,7 +58,8 @@ module.exports = {
 
       fontFamily: {
         'notoSansJp': ['Noto Sans JP', 'sans-serif'],
-        'lato': ['Lato', 'sans-serif']
+        'lato': ['Lato', 'sans-serif'],
+         'body': ['Lato', '"Noto Sans JP"', 'sans-serif'],
       },
 
       borderRadius: {
@@ -71,5 +72,13 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addBase }) {
+      addBase({
+        'a': {
+          '@apply hover:opacity-70 transition delay-[0.3ms] ease-in': '',
+        },
+      });
+    },
+  ],
 };
