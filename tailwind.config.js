@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     extend: {
       maxWidth: {
-        'main' : "1232px",
-        'screenf' : "1440px"
+        'main': "1232px",
+        'screenf': "1440px"
       },
       container: {
         center: true,
@@ -55,11 +55,11 @@ module.exports = {
           focus: '#D4AF37',
         },
       },
-
+  
       fontFamily: {
         'notoSansJp': ['Noto Sans JP', 'sans-serif'],
         'lato': ['Lato', 'sans-serif'],
-         'body': ['Lato', '"Noto Sans JP"', 'sans-serif'],
+        'body': ['Lato', '"Noto Sans JP"', 'sans-serif'],
       },
 
       borderRadius: {
@@ -75,7 +75,7 @@ module.exports = {
   plugins: [
     function ({ addBase }) {
       addBase({
-        'a': {
+        'a, button': {
           '@apply hover:opacity-70 transition delay-[0.3ms] ease-in': '',
         },
       });
